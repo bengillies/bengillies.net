@@ -1,0 +1,348 @@
+body {
+	font-family: Georgia, serif;
+	color: #332;
+	background-color: #faf9f5;
+	font-size: 1.5em;
+	line-height: 1.4;
+	width: 80%;
+	margin: 0 auto;
+	max-width: 900px;
+	min-width: 500px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	box-orient: vertical;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+}
+
+.article {
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+
+/**
+ * Header Section
+ */
+
+#header h1 {
+	font-size: 3em;
+	margin-bottom: 0.3em;
+	text-align: center;
+}
+
+#header a,
+#header a:hover {
+	color: #332;
+	text-decoration: none !important;
+}
+
+/**
+ * Nav section
+ */
+#nav {
+	margin-top: 1em;
+	margin-bottom: 2em;
+	padding: 0.3em;
+	border-top: 2px solid #332;
+	border-bottom: 4px solid #332;
+}
+
+ul.menu {
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+ul.menu li {
+	display: inline;
+	display: inline-block;
+	margin-right: 0.5em;
+}
+
+#nav ul.menu li:first-of-type {
+	display: none;
+}
+
+#nav a {
+	color: #332;
+}
+
+#nav .search {
+	float: right;
+}
+
+#nav .search input {
+	vertical-align: middle;
+	font-size: 1em;
+}
+
+/**
+ * Body Section
+ */
+.article {
+	padding: 0 0.5em;
+	text-align: justify;
+}
+
+.article img {
+	float: left;
+	margin: 1em 1em 0;
+	width: 256px;
+}
+
+.article h1 {
+	font-size: 2.5em;
+	margin-bottom: 0.5em;
+	margin-top: 0;
+	text-align: left;
+}
+
+.article h2 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 1em;
+	font-family: Georgia, serif;
+}
+
+#about p:first-of-type {
+	margin-top: 0;
+}
+
+/**
+ * Tumblr type stuff
+ */
+
+.search-result-count {
+	font-style: italic;
+}
+
+.post {
+	margin-bottom: 5em;
+}
+
+.post::after {
+	content: "\00a7";
+	clear: both;
+	font-size: 1.5em;
+	position: relative;
+	top: 1em;
+	line-height: 1;
+	font-style: italic;
+}
+
+.post h1 a {
+	color: #332;
+}
+
+.photo img {
+	float: none;
+	margin: 0;
+}
+
+.link a.title {
+	display: block;
+	margin: 0.3em 0;
+}
+
+.link a.title::before {
+	content: "[";
+	color: #332;
+}
+
+.link a.title::after {
+	content: "]";
+	color: #332;
+}
+
+.post blockquote {
+	margin-left: 0;
+	padding-left: 1em;
+	border-left: 5px solid #332;
+}
+
+.post .meta {
+	margin-top: 0.5em;
+	font-size: 0.8em;
+}
+
+.post .meta .tag::before {
+	content: "#";
+	color: #332;
+}
+
+.pagination {
+	margin-top: 1em;
+}
+
+.pagination .next {
+	float: left;
+}
+
+.pagination .previous {
+	float: right;
+}
+
+/**
+ * Footer section
+ */
+
+#footer {
+	clear: both;
+	padding-left: 0.3em;
+	border-top: 1px solid #332;
+	margin-top: 2em;
+	font-size: 0.7em;
+	padding-bottom: 1em;
+	height: 5em;
+}
+
+#footer p,
+#footer li {
+	margin: 0;
+}
+
+#footer ul {
+	margin-top: 1em;
+	font-family: courier;
+}
+
+#footer ul:before {
+	content: "Also on: ";
+}
+
+#footer ul a:before {
+	content: ":";
+}
+
+/**
+ * Global overrides
+ */
+
+a {
+	color: #3050FF;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline !important;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+pre {
+	overflow: auto;
+	border: 1px solid #332;
+	padding: 0.5em;
+	background: #e5e4e0;
+}
+
+.clearfix {
+	clear: both;
+}
+
+@media only screen and (max-width: 700px) {
+	#footer {
+		font-size: 1.2em;
+		line-height: 1.8;
+	}
+
+	#footer ul {
+		margin-bottom: 1em;
+	}
+
+	#footer li {
+		display: block;
+		margin-left: 1em;
+		margin-top: 0.5em;
+	}
+
+	ul.menu {
+		line-height: 1.8;
+	}
+
+	#nav {
+		font-size: 1.2em;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#nav ul.menu li {
+		display: block;
+		margin: 0;
+	}
+
+	#nav ul.collapse li {
+		display: none;
+	}
+
+	#nav ul.menu li:first-of-type {
+		display: block;
+		padding-left: 0.5em;
+	}
+
+	#nav ul.menu li:first-of-type button {
+		text-transform: uppercase;
+		font-size: 1em;
+		font-weight: bold;
+		border: none;
+		background: transparent;
+		padding: 0;
+		margin: 0;
+		cursor: pointer;
+		display: block;
+		width: 95%;
+		text-align: left;
+	}
+
+	#nav a {
+		display: block;
+		padding-left: 0.8em;
+		padding-right: 0.8em;
+	}
+
+	body {
+		max-width: inherit;
+		min-width: inherit;
+		width: 100%;
+	}
+
+	#header h1 {
+		font-size: 2.5em;
+		margin-bottom: 0;
+	}
+
+	.article img {
+		display: block;
+		float: none;
+		margin: 1em auto;
+	}
+}
